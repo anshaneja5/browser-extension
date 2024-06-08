@@ -1,0 +1,24 @@
+{
+  "manifest_version": 2,
+  "name": "LinkedIn Post Analytics",
+  "version": "1.0",
+  "description": "Displays the number of likes, comments, and reshares for a specific LinkedIn post.",
+  "permissions": [
+    "activeTab",
+    "https://www.linkedin.com/*"
+  ],
+  "browser_action": {
+    "default_popup": "popup.html"
+  },
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://www.linkedin.com/*"],
+      "js": ["content.js"],
+      "run_at": "document_end"
+    }
+  ]
+}

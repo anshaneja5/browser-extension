@@ -1,0 +1,22 @@
+body {
+    font-family: Arial, sans-serif;
+    width: 300px;
+    padding: 10px;
+  }
+  
+  .dashboard {
+    text-align: center;
+  }
+  
+  .metric {
+    margin: 10px 0;
+  }
+  
+  .label {
+    font-weight: bold;
+  }
+  
+  #likes, #comments, #reshares {
+    font-size: 1.5em;
+  }
+  
